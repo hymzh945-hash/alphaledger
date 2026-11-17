@@ -162,3 +162,11 @@ source stays open, which means you can audit exactly what the report does with y
 
 AlphaLedger is an analysis tool, not investment advice. Backtested and audited performance is
 not indicative of future results. Trade with money you can afford to lose.
+
+## Pro edition
+
+The paid edition adds the HTML report templates, CSV exports, and an offline-verified signed
+licence — no server check, no telemetry. $39 once, yours to keep:
+
+https://hymz.gumroad.com/l/alphaledger
+
