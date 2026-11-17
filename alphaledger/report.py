@@ -25,6 +25,7 @@ letter-spacing:.14em;text-transform:uppercase}
 .dot{width:8px;height:8px;border-radius:50%;background:var(--green)}
 h1{font-size:30px;margin:14px 0 6px;letter-spacing:-.02em}
 .meta{color:var(--muted);font-size:13px}
+.metarow{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:8px}
 .badge{display:inline-block;padding:3px 9px;border:1px solid var(--line);border-radius:999px;
 font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .badge.pro{color:var(--amber);border-color:#4b3a12;background:#1a1408}
@@ -316,7 +317,7 @@ def build_report(
 <div class="brand"><span class="dot"></span>AlphaLedger · Strategy performance audit {badge}</div>
 <h1>{name}</h1>
 <div class="meta">{start} → {end} · {periods} observations · {lic.describe()}</div>
-<div class="meta" style="margin-top:6px">{meta_rows}</div>
+<div class="metarow">{meta_rows}</div>
 {''.join(sections)}
 <footer>
 Generated locally by AlphaLedger {version} on {datetime.now():%Y-%m-%d %H:%M}.
