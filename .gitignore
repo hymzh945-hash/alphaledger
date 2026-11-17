@@ -9,3 +9,5 @@ dist/
 license_*.json
 .DS_Store
 examples/*.html
+dist/*.tar.gz
+pack/
