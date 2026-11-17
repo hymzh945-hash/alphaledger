@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alphaledger"
+dynamic = ["version"]
+description = "Offline strategy performance audit: tearsheets, walk-forward, Monte Carlo, comparison"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+authors = [{name = "AlphaLedger"}]
+keywords = ["quant", "backtest", "tearsheet", "sharpe", "walk-forward", "monte-carlo"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "matplotlib>=3.7",
+]
+
+[project.optional-dependencies]
+license = ["cryptography>=41.0"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+alphaledger = "alphaledger.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "alphaledger.version.version"}
+
+[tool.setuptools.packages.find]
+include = ["alphaledger*"]
+
+[tool.setuptools.package-data]
+alphaledger = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

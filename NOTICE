@@ -1,0 +1,18 @@
+AlphaLedger
+Copyright 2026 AlphaLedger contributors
+
+This product includes software derived from QuantStats
+(https://github.com/ranaroussi/quantstats), Copyright 2019-2025 Ran Aroussi,
+licensed under the Apache License, Version 2.0.
+
+The derived portion lives in alphaledger/engine/ and is used as the statistical
+and plotting foundation of the report. Modifications made by AlphaLedger:
+
+  * package renamed and repackaged under the alphaledger namespace
+  * one internal absolute import rewritten to a relative import
+  * entry points, packaging metadata and report templates replaced
+
+The Apache License 2.0 text is included in LICENSE.
+
+Third-party runtime dependencies (pandas, numpy, matplotlib) are distributed
+under their own licenses; see their respective projects.

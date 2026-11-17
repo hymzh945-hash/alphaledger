@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+build/
+dist/
+.private/
+*.pem
+license_*.json
+.DS_Store
+examples/*.html
